@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <!-- Bootstrap Icons -->
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Google Font -->
+    <title>RiseUp!</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" type="image/x-icon" href="./img/favicon.svg">
+  </head>
+  <body>
+    <header>
+      <!-- Quick Accessibility Links -->
+      <div class="QuickAccess">
+        <ul>
+          <li class="QaLink"><a href="#">Acessibilidade</a></li>
+          <li class="QaLink"><a href="#">Contraste</a></li>
+          <li class="QaLink"><a href="#">Aumentar fonte</a></li>
+          <li class="QaLink"><a href="#">Diminuir fonte</a></li>
+        </ul>
+      </div>
+      <!-- End Quick Accessibility Links -->
+
+      <!-- Navigation Links -->
+      <nav class="Navbar">
+        <div class="Container">
+          <div class="Brand">
+            <button class="ToggleButton">toggle</button>
+            <h1 class="Logo">RiseUp</h1>
+            <ul>
+              <li class="NavLink"><a href="#">Comprar Passagem</a></li>
+              <li class="NavLink"><a href="#">Checkin</a></li>
+              <li class="NavLink"><a href="#">Status de Voo</a></li>
+            </ul>
+          </div>
+          <div class="NavItems">
+            <ul>
+              <li class="NavLink"><a href="#">Atendimento</a></li>
+              <li class="NavLink"><a href="#">Informações</a></li>
+              <li class="NavLink Login"><a href="#">Login</a></li>
+              <li class="NavLink">
+                <a href="#"><i class="bi bi-bell-fill"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- End Navigation Links -->
+    </header>
+    <main>
+      <!-- Flight Form -->
+      <section id="Hero">
+        <form action="" id="BuscarVoos">
+          <div class="Row">
+            <div class="Col">
+              <label for="Trecho">Trecho</label>
+              <select name="Trecho" id="Trecho">
+                <option value="1" selected>Ida e volta</option>
+                <option value="2">Só ida ou volta</option>
+                <option value="3">Vários trevhos</option>
+              </select>
+            </div>
+            <div class="Col">
+              <label for="Origem">Origem</label>
+              <input id="Origem" type="text" placeholder="REC-Recife" />
+            </div>
+            <div class="Col">
+              <label for="Origem">Destino</label>
+              <input id="Destino" type="text" placeholder="GRU-Guarulhos" />
+            </div>
+          </div>
+          <div class="Row">
+            <div class="Col">
+              <label for="Passageiros">Passageiros</label>
+              <select name="Passageiros" id="Passageiros">
+                <option value="1" selected>1 Adulto(s) +12 anos</option>
+                <option value="2">1 Criança(s) 0-12 anos</option>
+                <option value="3">1 Bebê(s) 0-23 meses</option>
+              </select>
+            </div>
+            <div class="Col">
+              <label for="DataIda">Data da viagem de ida</label>
+              <input id="IdaData" type="date" />
+            </div>
+            <div class="Col">
+              <label for="DataVolta">Data da viagem de volta</label>
+              <input id="VoltaData" type="date" />
+            </div>
+          </div>
+          <div class="Row">
+            <input
+              id="BuscarVoos"
+              class="BtnNext"
+              type="submit"
+              value="Buscar Voos"
+            />
+          </div>
+        </form>
+      </section>
+      <!-- End Flight Form -->
+
+      <!-- Images Carousel -->
+      <section id="Carousel">
+        <div class="Tittle">
+          <h2>Viagens de fim de semana econômicas</h2>
+          <p>
+            Gaste menos e veja mais: troque os pontos mais populares da cidade
+            por estas alternativas econômicas.
+          </p>
+        </div>
+        <div class="slider">
+          <div class="slides">
+            <!-- Radio Buttons -->
+            <input type="radio" name="radio-btn" id="radio1" />
+            <input type="radio" name="radio-btn" id="radio2" />
+            <input type="radio" name="radio-btn" id="radio3" />
+            <input type="radio" name="radio-btn" id="radio4" />
+            <!-- End Radio Buttons -->
+
+            <!-- Slide Images -->
+            <div class="slide first">
+              <img src="./img/rio.jpg" alt="Slide 1" />
+            </div>
+            <div class="slide">
+              <img src="./img/sp.jpg" alt="Slide 2" />
+            </div>
+            <div class="slide">
+              <img src="./img/paris.jpg" alt="Slide 3" />
+            </div>
+            <div class="slide">
+              <img src="./img/tokyo.jpg" alt="Slide 4" />
+            </div>
+            <!-- End Slide Images -->
+
+            <!-- Navgation auto -->
+            <div class="navigation-auto">
+              <div class="auto-btn1"></div>
+              <div class="auto-btn2"></div>
+              <div class="auto-btn3"></div>
+              <div class="auto-btn4"></div>
+            </div>
+            <!-- End Navgation auto -->
+          </div>
+
+          <!-- Manual navigation -->
+          <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+          </div>
+        </div>
+        <a href="#" class="BtnPrimary">Compre agora</a>
+      </section>
+      <!-- End Images Carousel -->
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>

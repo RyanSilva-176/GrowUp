@@ -7,7 +7,6 @@
   font-family: "Nunito", sans-serif;
   list-style: none;
   text-decoration: none;
-  outline: none;
 }
 
 /* Global */
@@ -25,12 +24,19 @@
   cursor: pointer;
 }
 
-/* Global */
-
-.Container {
-  padding: 0 4%;
-  display: flex;
+.BtnOutline {
+  padding: 0.5rem;
+  border: 1px solid #7c7c8a;
+  border-radius: 32px;
+  background-color: transparent;
+  width: 110px;
 }
+
+.BtnOutline:hover {
+  background-color: rgba(124, 124, 138, 0.3);
+}
+
+/* Global */
 
 .QuickAccess ul {
   display: flex;
@@ -122,6 +128,8 @@
   background-position: center;
   height: 550px;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #Hero form {
@@ -299,6 +307,137 @@ select {
 
 /* ================= End Carousel ================= */
 
+/* ================= Hotels ================= */
+
+#Hotels {
+  padding: 0 4%;
+  display: flex;
+  flex-direction: column;
+}
+
+#Hotels .NavPlaces {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+#Hotels .NavPlaces .BtnsPlaces {
+  display: flex;
+  gap: 1rem;
+}
+
+#Hotels .NavPlaces .ShowMore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+#Hotels .NavPlaces .ShowMore p {
+  color: #a100ff;
+}
+
+#Hotels .NavPlaces .ShowMore button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.bi-arrow-left-circle {
+  color: #7c7c8a;
+}
+
+.bi-arrow-right-circle {
+  color: #a100ff;
+}
+
+#Hotels .NavPlaces .ShowMore button i {
+  font-size: 1.5rem;
+}
+
+#Hotels .Cards {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#Hotels .Cards .Card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#Hotels .Cards .Card img {
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+#Hotels .Cards .Card .Info {
+  width: 100%;
+  box-shadow: 1px 1px 2px rgba(124, 124, 138, 0.5);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding-bottom: 3rem;
+}
+
+#Hotels .Cards .Card .GroupText {
+  margin-top: 1.5rem;
+  display: flex;
+}
+
+#Hotels .Card .Info .GroupText {
+  display: flex;
+  flex-direction: column;
+  margin-left: .5rem;
+}
+
+#Hotels .Card .Info .GroupText .Place{
+  display: flex;
+  gap: 0.5rem;
+}
+
+#Hotels .Card .Info .GroupText .Place h3 {
+  font-size: 16px;
+  font-weight: normal;
+  color: #7c7c8a;
+}
+
+#Hotels .Card .Info .GroupText .HotelName{
+  font-size: 18px;
+  margin-top: 1rem;
+}
+
+#Hotels .Cards .Card .Info .GroupInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
+#Hotels .Cards .Card .Info .GroupInfo .Stars{
+  display: flex;
+  gap: .1rem;
+}
+
+.bi-star-fill, .bi-star-half, .bi-star{
+  color: #ff9400;
+}
+
+#Hotels .Cards .Card .Info .GroupInfo .Price{
+  display: flex;
+  gap: .5rem;
+}
+
+#Hotels .Cards .Card .Info .GroupInfo .Price h4{
+  font-size: 18px;
+}
+
+/* ================= End Hotels ================= */
+
 @media only screen and (max-width: 600px) {
   .Navbar .NavItems {
     display: none;
@@ -319,5 +458,68 @@ select {
     gap: 1rem;
     padding: 0%;
     margin: 0%;
+  }
+
+  .slider {
+    margin: 0 auto;
+    width: 400px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+
+  .slides {
+    width: 400%;
+    height: 200px;
+    display: flex;
+  }
+
+  .slide {
+    width: 25%;
+    position: relative;
+    transition: 2s;
+  }
+
+  .slide img {
+    width: 400px;
+  }
+
+  .manual-navigation {
+    position: absolute;
+    width: 400px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .navigation-auto {
+    position: absolute;
+    width: 400px;
+    margin-top: 160px;
+    display: flex;
+    justify-content: center;
+  }
+
+  #Hotels .Cards {
+    flex-direction: column;
+  }
+  
+  #Hotels .Cards .Card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  #Hotels .NavPlaces {
+    flex-direction: column;
+  }
+  
+  #Hotels .NavPlaces .BtnsPlaces {
+    flex-wrap: wrap;
+  }
+  
+  #Hotels .NavPlaces .ShowMore {
+    margin-top: 1.5rem;
   }
 }

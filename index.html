@@ -22,18 +22,20 @@
     <!-- Google Font -->
     <title>RiseUp!</title>
     <link rel="stylesheet" href="./styles.css" />
-    <link rel="icon" type="image/x-icon" href="./img/favicon.svg">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.svg" />
   </head>
   <body>
     <header>
       <!-- Quick Accessibility Links -->
       <div class="QuickAccess">
-        <ul>
-          <li class="QaLink"><a href="#">Acessibilidade</a></li>
-          <li class="QaLink"><a href="#">Contraste</a></li>
-          <li class="QaLink"><a href="#">Aumentar fonte</a></li>
-          <li class="QaLink"><a href="#">Diminuir fonte</a></li>
-        </ul>
+        <div class="Container">
+          <ul>
+            <li class="QaLink"><a href="#">Acessibilidade</a></li>
+            <li class="QaLink"><a href="#">Contraste</a></li>
+            <li class="QaLink"><a href="#">Aumentar fonte</a></li>
+            <li class="QaLink"><a href="#">Diminuir fonte</a></li>
+          </ul>
+        </div>
       </div>
       <!-- End Quick Accessibility Links -->
 
@@ -169,6 +171,133 @@
         <a href="#" class="BtnPrimary">Compre agora</a>
       </section>
       <!-- End Images Carousel -->
+
+      <!-- Hotels -->
+      <section id="Hotels">
+        <div class="Tittle">
+          <h1>Planeje suas próximas férias perto de casa</h1>
+        </div>
+        <div class="NavPlaces">
+          <div class="BtnsPlaces">
+            <button class="BtnOutline" onclick="">Rio de Janeiro</button>
+            <button class="BtnOutline" onclick="">São Paulo</button>
+            <button class="BtnOutline" onclick="">Fortaleza</button>
+            <button class="BtnOutline" onclick="">Maceió</button>
+            <button class="BtnOutline" onclick="">Salvador</button>
+          </div>
+          <div class="ShowMore">
+            <p>Mostrar mais hotéis</p>
+            <button><i class="bi bi-arrow-left-circle"></i></button>
+            <button><i class="bi bi-arrow-right-circle"></i></button>
+          </div>
+        </div>
+        <!-- Cards -->
+        <div class="Cards">
+          <div class="Card">
+            <img src="./img/hilton.jpg" alt="" />
+            <div class="Info">
+              <div class="GroupText">
+                <div class="Place">
+                  <i class="bi bi-geo-fill"></i>
+                  <h3>Rio de Janeiro, Brasil</h3>
+                </div>
+                <h1 class="HotelName">Radisson Rio de Janeiro Barra</h1>
+              </div>
+              <div class="GroupInfo">
+                <div class="Stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                  <i class="bi bi-star"></i>
+                </div>
+                <div class="Price">
+                  <h4>R$ 407</h4>
+                  <i>Por diária</i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="Card">
+            <img src="./img/othon.jpg" alt="" />
+            <div class="Info">
+              <div class="GroupText">
+                <div class="Place">
+                  <i class="bi bi-geo-fill"></i>
+                  <h3>Rio de Janeiro, Brasil</h3>
+                </div>
+                <h1 class="HotelName">Radisson Rio de Janeiro Barra</h1>
+              </div>
+              <div class="GroupInfo">
+                <div class="Stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                  <i class="bi bi-star"></i>
+                </div>
+                <div class="Price">
+                  <h4>R$ 407</h4>
+                  <i>Por diária</i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="Card">
+            <img src="./img/sheraton.jpg" alt="" />
+            <div class="Info">
+              <div class="GroupText">
+                <div class="Place">
+                  <i class="bi bi-geo-fill"></i>
+                  <h3>Rio de Janeiro, Brasil</h3>
+                </div>
+                <h1 class="HotelName">Radisson Rio de Janeiro Barra</h1>
+              </div>
+              <div class="GroupInfo">
+                <div class="Stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                  <i class="bi bi-star"></i>
+                </div>
+                <div class="Price">
+                  <h4>R$ 407</h4>
+                  <i>Por diária</i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="Card">
+            <img src="./img/windsor.jpg" alt="" />
+            <div class="Info">
+              <div class="GroupText">
+                <div class="Place">
+                  <i class="bi bi-geo-fill"></i>
+                  <h3>Rio de Janeiro, Brasil</h3>
+                </div>
+                <h1 class="HotelName">Radisson Rio de Janeiro Barra</h1>
+              </div>
+              <div class="GroupInfo">
+                <div class="Stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                  <i class="bi bi-star"></i>
+                </div>
+                <div class="Price">
+                  <h4>R$ 407</h4>
+                  <i>Por diária</i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br /><br /><br /><br /><br />
+        <!-- End Cards -->
+      </section>
+      <!-- End Hotels -->
     </main>
     <script src="./app.js"></script>
   </body>

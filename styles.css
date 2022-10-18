@@ -36,90 +36,154 @@
   background-color: rgba(124, 124, 138, 0.3);
 }
 
+@media (max-width: 600px) {
+  .BtnOutline {
+    font-size: 10px;
+    width: 80px;
+  }
+}
+
 /* Global */
 
-.QuickAccess ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1.5rem;
-  background: rgba(161, 0, 255, 0.1);
-  padding: 0.2rem;
-}
-
-.QuickAccess .QaLink a {
-  color: #7c7c8a;
-  transition: 0.3s ease-in-out;
-  font-size: 12px;
+/* Header */
+#logo {
+  font-size: 2rem;
   font-weight: bold;
-}
-
-.QuickAccess .QaLink a:hover {
-  border: solid #a100ff;
-  border-radius: 4px;
-  font-size: 14px;
-  transition: 0.3s ease-in;
-}
-
-.Navbar .Container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #fff;
-  padding: 1rem;
-}
-
-.Navbar .Brand {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-}
-
-.Navbar .Brand .Logo {
   color: #a100ff;
-  font-weight: bold;
+  transition: 1s;
 }
 
-.Navbar .Brand ul {
+#logo:hover {
+  color: rgba(255, 0, 221, 0.8);
+}
+
+#header {
+  height: 70px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1rem;
 }
 
-.Navbar .NavItems {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.Navbar .NavItems ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-}
-
-.ToggleButton {
-  display: none;
-}
-
-.NavLink a {
+#menu a {
+  display: block;
   color: #000;
 }
 
-.NavLink a:hover {
+#menu a:hover {
   border-bottom: 2px solid #a100ff;
+  font-weight: bold;
 }
 
-.NavItems .Login a {
+#menu .bell {
+  transition: 1s;
+}
+
+#menu .bell:hover {
+  border-bottom: none;
+  color: rgba(255, 0, 221, 0.8);
+}
+
+#btn-mobile {
+  display: none;
+}
+
+#menu .login {
   border-radius: 4px;
   padding: 0.5rem 1rem;
   color: #fff;
   background: #a100ff;
-  border: none;
+  transition: 1s;
 }
+
+#menu .login:hover {
+  border: none;
+  background-color: rgba(255, 0, 221, 0.8);
+}
+
+@media (max-width: 600px) {
+  #menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0px;
+    background: #fff;
+    transition: 0.6s;
+    z-index: 1000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  #nav.active #menu {
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+  #menu a {
+    padding: 1rem 0.5rem;
+    margin: 0.5rem 1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    color: #000;
+  }
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+  #hamburguer {
+    display: block;
+    width: 20px;
+    border-top: 2px solid;
+  }
+  #hamburguer::after,
+  #hamburguer::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+  #nav.active #hamburguer {
+    border-top-color: transparent;
+  }
+  #nav.active #hamburguer::before {
+    transform: rotate(135deg);
+  }
+  #nav.active #hamburguer::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+  #menu .bell {
+    border: none;
+  }
+  #menu .login {
+    margin-top: 1rem;
+    border: none;
+  }
+}
+
+/* End Header */
 
 #Hero {
   background-image: url("https://img.static-af.com/images/media/E914072A-B2B5-48C1-9559E1D8C9359187/?w=1279");
@@ -381,7 +445,7 @@ select {
   box-shadow: 1px 1px 2px rgba(124, 124, 138, 0.5);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
 }
 
 #Hotels .Cards .Card .GroupText {
@@ -392,10 +456,10 @@ select {
 #Hotels .Card .Info .GroupText {
   display: flex;
   flex-direction: column;
-  margin-left: .5rem;
+  margin-left: 0.5rem;
 }
 
-#Hotels .Card .Info .GroupText .Place{
+#Hotels .Card .Info .GroupText .Place {
   display: flex;
   gap: 0.5rem;
 }
@@ -406,7 +470,7 @@ select {
   color: #7c7c8a;
 }
 
-#Hotels .Card .Info .GroupText .HotelName{
+#Hotels .Card .Info .GroupText .HotelName {
   font-size: 18px;
   margin-top: 1rem;
 }
@@ -418,25 +482,95 @@ select {
   margin-top: 1rem;
 }
 
-#Hotels .Cards .Card .Info .GroupInfo .Stars{
+#Hotels .Cards .Card .Info .GroupInfo .Stars {
   display: flex;
-  gap: .1rem;
+  gap: 0.1rem;
 }
 
-.bi-star-fill, .bi-star-half, .bi-star{
+.bi-star-fill,
+.bi-star-half,
+.bi-star {
   color: #ff9400;
 }
 
-#Hotels .Cards .Card .Info .GroupInfo .Price{
+#Hotels .Cards .Card .Info .GroupInfo .Price {
   display: flex;
-  gap: .5rem;
+  gap: 0.5rem;
 }
 
-#Hotels .Cards .Card .Info .GroupInfo .Price h4{
+#Hotels .Cards .Card .Info .GroupInfo .Price h4 {
   font-size: 18px;
 }
 
 /* ================= End Hotels ================= */
+
+/* Cards */
+#Cards {
+  background-color: #f1f2f8;
+  margin-top: 3rem;
+}
+
+#Cards .Row{
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem;
+  gap: 3rem;
+}
+
+#Cards .Row .Col{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+#Cards .Row .Col img{
+  height: 250px;
+}
+
+#Cards .Row .Col h2{
+  color: #a100ff;
+  margin-top: 1rem;
+}
+
+#Cards .Row .Col p{
+  text-align: justify;
+}
+/* End Cards */
+
+/* Footer */
+
+#Footer{
+  background-color: #000;
+  margin-top: 3rem;
+}
+
+#Footer .Row{
+  display: flex;
+  justify-content: space-around;
+  padding: 3rem 0;
+}
+
+#Footer .Row .Col h2{
+  color: #a100ff;
+}
+
+#Footer .Row .Col ul{
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+#Footer .Row .Col a{
+  color: #7c7c8a;
+}
+
+#Footer .Row .Col a:hover{
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* End Footer */
 
 @media only screen and (max-width: 600px) {
   .Navbar .NavItems {
@@ -462,7 +596,7 @@ select {
 
   .slider {
     margin: 0 auto;
-    width: 400px;
+    width: 350px;
     height: 200px;
     overflow: hidden;
     border-radius: 8px;
@@ -481,7 +615,7 @@ select {
   }
 
   .slide img {
-    width: 400px;
+    width: 100%;
   }
 
   .manual-navigation {
@@ -503,23 +637,51 @@ select {
   #Hotels .Cards {
     flex-direction: column;
   }
-  
+
   #Hotels .Cards .Card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
+    width: 350px;
+  }
+
+  #Hotels .Cards .Card .Info .GroupInfo {
+    justify-content: space-between;
+    padding: 0 0.5rem;
   }
 
   #Hotels .NavPlaces {
     flex-direction: column;
   }
-  
+
   #Hotels .NavPlaces .BtnsPlaces {
     flex-wrap: wrap;
   }
-  
+
   #Hotels .NavPlaces .ShowMore {
     margin-top: 1.5rem;
+  }
+
+  #Hotels .NavPlaces .BtnsPlaces {
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+  #Cards .Row{
+    flex-direction: column;
+  }
+
+  #Cards .Row .Col img{
+    height: 200px;
+  }
+
+  #Footer .Row{
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40%;
+    row-gap: 3rem;
   }
 }

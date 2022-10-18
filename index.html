@@ -25,45 +25,30 @@
     <link rel="icon" type="image/x-icon" href="./img/favicon.svg" />
   </head>
   <body>
-    <header>
-      <!-- Quick Accessibility Links -->
-      <div class="QuickAccess">
-        <div class="Container">
-          <ul>
-            <li class="QaLink"><a href="#">Acessibilidade</a></li>
-            <li class="QaLink"><a href="#">Contraste</a></li>
-            <li class="QaLink"><a href="#">Aumentar fonte</a></li>
-            <li class="QaLink"><a href="#">Diminuir fonte</a></li>
-          </ul>
-        </div>
-      </div>
-      <!-- End Quick Accessibility Links -->
-
-      <!-- Navigation Links -->
-      <nav class="Navbar">
-        <div class="Container">
-          <div class="Brand">
-            <button class="ToggleButton">toggle</button>
-            <h1 class="Logo">RiseUp</h1>
-            <ul>
-              <li class="NavLink"><a href="#">Comprar Passagem</a></li>
-              <li class="NavLink"><a href="#">Checkin</a></li>
-              <li class="NavLink"><a href="#">Status de Voo</a></li>
-            </ul>
-          </div>
-          <div class="NavItems">
-            <ul>
-              <li class="NavLink"><a href="#">Atendimento</a></li>
-              <li class="NavLink"><a href="#">Informações</a></li>
-              <li class="NavLink Login"><a href="#">Login</a></li>
-              <li class="NavLink">
-                <a href="#"><i class="bi bi-bell-fill"></i></a>
-              </li>
-            </ul>
-          </div>
-        </div>
+    <header id="header">
+      <a id="logo" href="">RiseUp</a>
+      <nav id="nav">
+        <button
+          id="btn-mobile"
+          area-label="Abrir Menu"
+          aria-haspopup="true"
+          aria-controls="menu"
+          aria-expanded="false"
+        >
+          <span id="hamburguer"></span>
+        </button>
+        <ul id="menu" role="menu">
+          <li><a href="/">Comprar Passagem</a></li>
+          <li><a href="/">Checkin</a></li>
+          <li><a href="/">Status de Voo</a></li>
+          <li><a href="/">Atendimento</a></li>
+          <li><a href="/">Informações</a></li>
+          <li><a class="login" href="/">Login</a></li>
+          <li>
+            <a class="bell" href="/"><i class="bi bi-bell-fill"></i></a>
+          </li>
+        </ul>
       </nav>
-      <!-- End Navigation Links -->
     </header>
     <main>
       <!-- Flight Form -->
@@ -294,10 +279,103 @@
             </div>
           </div>
         </div>
-        <br /><br /><br /><br /><br />
         <!-- End Cards -->
       </section>
       <!-- End Hotels -->
+
+      <!-- Cards -->
+      <section id="Cards">
+        <div class="Row">
+          <div class="Col">
+            <img
+              src="https://js.skyscnr.com/sttc/blackbird/static/media/first_pillar.5de1acf4.svg"
+              alt=""
+            />
+            <h2>Lorem, ipsum dolor.</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse
+              similique laudantium corrupti fuga sunt id excepturi laboriosam
+              veniam unde dignissimos?
+            </p>
+          </div>
+          <div class="Col">
+            <img
+              src="https://js.skyscnr.com/sttc/blackbird/static/media/second_pillar.b0aba788.svg"
+              alt=""
+            />
+            <h2>Lorem, ipsum dolor.</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse
+              similique laudantium corrupti fuga sunt id excepturi laboriosam
+              veniam unde dignissimos?
+            </p>
+          </div>
+          <div class="Col">
+            <img
+              src="https://js.skyscnr.com/sttc/blackbird/static/media/third_pillar.f5197051.svg"
+              alt=""
+            />
+            <h2>Lorem, ipsum dolor.</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse
+              similique laudantium corrupti fuga sunt id excepturi laboriosam
+              veniam unde dignissimos?
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- End Cards -->
+
+      <!-- Footer -->
+      <footer id="Footer">
+        <div class="Row">
+          <div class="Col">
+            <ul>
+              <h2>Title</h2>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+            </ul>
+          </div>
+          <div class="Col">
+            <ul>
+              <h2>Title</h2>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+            </ul>
+          </div>
+          <div class="Col">
+            <ul>
+              <h2>Title</h2>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+            </ul>
+          </div>
+          <div class="Col">
+            <ul>
+              <h2>Title</h2>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      <!-- End Footer -->
     </main>
     <script src="./app.js"></script>
   </body>

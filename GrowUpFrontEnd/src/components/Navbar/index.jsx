@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Hamburguer from '../Hamburguer';
+
 import "./style.css"
 
 function Navbar() {
@@ -7,23 +9,16 @@ function Navbar() {
         <header className="header">
             <a className="logo" href="">RiseUp</a>
             <nav className="nav">
-            <button className="btn-mobile"
-                area-label="Abrir Menu"
-                aria-haspopup="true"
-                aria-controls="menu"
-                aria-expanded="false"
-            >
-                <span className="hamburguer"></span>
-            </button>
+            <Hamburguer />
             <ul className="menu" role="menu">
                 <li><a href="/">Comprar Passagem</a></li>
                 <li><a href="/">Checkin</a></li>
                 <li><a href="/">Status de Voo</a></li>
                 <li><a href="/">Atendimento</a></li>
                 <li><a href="/">Informações</a></li>
-                <li><a class="login" href="/">Login</a></li>
+                <li><a className="login" href="/">Login</a></li>
                 <li>
-                <a class="bell" href="/"><i class="bi bi-bell-fill"></i></a>
+                <a className="bell" href="/"><i className="bi bi-bell-fill"></i></a>
                 </li>
             </ul>
             </nav>

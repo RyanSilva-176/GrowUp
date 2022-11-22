@@ -6,23 +6,36 @@ import "./style.css"
 
 function Navbar() {
     return (
-        <header className="header">
-            <a className="logo" href="">RiseUp</a>
-            <nav className="nav">
-            <Hamburguer />
-            <ul className="menu" role="menu">
-                <li><a href="/">Comprar Passagem</a></li>
-                <li><a href="/">Checkin</a></li>
-                <li><a href="/">Status de Voo</a></li>
-                <li><a href="/">Atendimento</a></li>
-                <li><a href="/">Informações</a></li>
-                <li><a className="login" href="/">Login</a></li>
-                <li>
-                <a className="bell" href="/"><i className="bi bi-bell-fill"></i></a>
-                </li>
-            </ul>
-            </nav>
-        </header>
+        <nav className="navbar navbar-expand-lg bg-light">
+            <div className="container-fluid">
+                <a className="navbar-brand" href="#"><h1>RiseUp</h1></a>
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
+                </button>
+                <div className="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
+                    <ul className="navbar-nav ms-auto ">
+                        <li className="nav-item">
+                            <a className="nav-link active" aria-current="page" href="#">Comprar Passagem</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="#">Checkin</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="#">Status de Voo</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="#">Atendimento</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="#">Informações</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="btn btn-primary" role='button' href="#">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     );
 }
 

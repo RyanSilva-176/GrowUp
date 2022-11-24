@@ -1,6 +1,5 @@
 import React from 'react';
-
-import Hamburguer from '../Hamburguer';
+import { Link } from 'react-router-dom';
 
 import "./style.css"
 
@@ -8,7 +7,7 @@ function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg bg-light">
             <div className="container-fluid">
-                <a className="navbar-brand" href="#"><h1>RiseUp</h1></a>
+                <Link className="navbar-brand" to="/"><h1>RiseUp</h1></Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
@@ -30,7 +29,8 @@ function Navbar() {
                             <a className="nav-link" href="#">Informações</a>
                         </li>
                         <li className="nav-item">
-                            <a className="btn btn-primary" role='button' href="#">Login</a>
+                            <Link className="btn btn-primary" role='button' to="login">Login</Link>
+                            
                         </li>
                     </ul>
                 </div>

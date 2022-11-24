@@ -11,6 +11,7 @@ import FlightForm from './components/FlightForm';
 import Carousel from './components/Carousel';
 import Cards from './components/Cards';
 import InfoCard from './components/InfoCard';
+import Footer from './components/Footer';
 
 import "./App.css"
 
@@ -49,6 +50,7 @@ function App() {
                 corrupti fuga sunt id excepturi laboriosam veniam unde dignissimos?'
           />
         </section>
+        <Footer />
 
       </main>
     </div>

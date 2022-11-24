@@ -16,7 +16,7 @@ function App() {
       </header>
       <main>
         <FlightForm />
-        {/*<Carousel /> */}
+        <Carousel />
       </main>
     </div>
   )

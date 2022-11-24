@@ -9,19 +9,6 @@ import tokyoSlide from "../../assets/tokyo.jpg"
 
 function Carousel() {
 
-    const count = useRef(1)
-
-    setInterval(function () {
-        nextImage();
-    }, 10);
-
-    function nextImage() {
-        count.current = count.current + 1;
-        if (count.current > 4) {
-            count.current = 1;
-        }
-    }
-
     return (
         <section className='carousel'>
             <div className="title">
@@ -31,41 +18,36 @@ function Carousel() {
                     por estas alternativas econômicas.
                 </p>
             </div>
-            <div className="slider">
-                <div className="slides">
-                    <input type="radio" name="radio-btn" id="radio1"/>
-                    <input type="radio" name="radio-btn" id="radio2"/>
-                    <input type="radio" name="radio-btn" id="radio3"/>
-                    <input type="radio" name="radio-btn" id="radio4"/>
 
-                    <div className="slide first">
-                        <img src={rioSlide} alt="Slide 1" />
+            <div id='riseup_carousel' className="carousel slide" data-bs-ride="carousel">
+            <div className="carousel-indicators">
+                <button type="button" data-bs-target="#riseup_carousel" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#riseup_carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#riseup_carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#riseup_carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+                <div className="carousel-inner">
+                    <div className="carousel-item active">
+                        <img src={rioSlide} className="d-block w-100" alt="Cidade do Rio de Janeiro" title='Rio de Janeiro'/>
                     </div>
-                    <div className="slide">
-                        <img src={spSlide} alt="Slide 2" />
+                    <div className="carousel-item">
+                        <img src={spSlide} className="d-block w-100" alt="Cidade de São Paulo" title='São Paulo'/>
                     </div>
-                    <div className="slide">
-                        <img src={parisSlide} alt="Slide 3" />
+                    <div className="carousel-item">
+                        <img src={parisSlide} className="d-block w-100" alt="Cidade de Paris" title='Paris'/>
                     </div>
-                    <div className="slide">
-                        <img src={tokyoSlide} alt="Slide 4" />
-                    </div>
-
-                    <div className="navigation-auto">
-                        <div className="auto-btn1"></div>
-                        <div className="auto-btn2"></div>
-                        <div className="auto-btn3"></div>
-                        <div className="auto-btn4"></div>
+                    <div className="carousel-item">
+                        <img src={tokyoSlide} className="d-block w-100" alt="Cidade de Tokyo" title='Tokyo'/>
                     </div>
                 </div>
-
-                <div className="manual-navigation">
-                    <label htmlFor="radio1" className="manual-btn"></label>
-                    <label htmlFor="radio2" className="manual-btn"></label>
-                    <label htmlFor="radio3" className="manual-btn"></label>
-                    <label htmlFor="radio4" className="manual-btn"></label>
-                </div>
-
+                <button class="carousel-control-prev" type="button" data-bs-target="#riseup_carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#riseup_carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>                
             </div>
         </section>
     );

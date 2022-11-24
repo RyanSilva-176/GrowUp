@@ -8,7 +8,7 @@ function FlightForm() {
     const onSubmit = data => console.log(data)
 
     return (
-        <section className="bg-image flight-form">
+        <section className="bg-image flight-form" id='flight-form'>
             <form className='row g-3 needs-validation' onSubmit={handleSubmit(onSubmit)}>
                 <div className="col-md-4">
                     <label htmlFor="trecho" className="form-label">Trecho</label>

@@ -25,8 +25,18 @@ button {
   margin: 0 20px;
 }
 
+.button-container {
+  width: 16vw;
+  margin: auto;
+}
+
 @media screen and (max-width: 845px) {
   .carousel {
-    padding: 20px 25px;
+    padding: 0
+  }
+
+  .button-container {
+    width: 30vw;
+    margin: 20px auto;
   }
 }

@@ -40,14 +40,17 @@ function Carousel() {
                         <img src={tokyoSlide} className="d-block w-100" alt="Cidade de Tokyo" title='Tokyo'/>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#riseup_carousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
+                <button className="carousel-control-prev" type="button" data-bs-target="#riseup_carousel" data-bs-slide="prev">
+                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span className="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#riseup_carousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
+                <button className="carousel-control-next" type="button" data-bs-target="#riseup_carousel" data-bs-slide="next">
+                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span className="visually-hidden">Next</span>
                 </button>                
+            </div>
+            <div className="button-container">
+                <a type='button' href='#flight-form' className="btn btn-primary">Comprar Agora</a>
             </div>
         </section>
     );

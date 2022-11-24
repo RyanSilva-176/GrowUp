@@ -5,6 +5,7 @@ import "bootstrap/dist/js/bootstrap.min.js"
 import Navbar from './components/Navbar';
 import FlightForm from './components/FlightForm';
 import Carousel from './components/Carousel';
+import Cards from './components/Cards';
 
 import "./App.css"
 
@@ -17,6 +18,7 @@ function App() {
       <main>
         <FlightForm />
         <Carousel />
+        <Cards />
       </main>
     </div>
   )

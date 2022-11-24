@@ -21,30 +21,34 @@ function Cards() {
                     <button type='button' className="btn btn-outline-secondary">Maceió</button>
                     <button type='button' className="btn btn-outline-secondary">Salvador</button>
                 </div>
-                <div class="show-more">
+                <div className="show-more">
                     <p>Mostrar mais hotéis</p>
-                    <button><i class="bi bi-arrow-left-circle"></i></button>
-                    <button><i class="bi bi-arrow-right-circle"></i></button>
+                    <button><i className="bi bi-arrow-left-circle"></i></button>
+                    <button><i className="bi bi-arrow-right-circle"></i></button>
                 </div>
             </div>
             <div className="cards">
                 <Card 
                     image={Hilton}
+                    place={"Rio de Janeiro - Brasil"}
                     title={"Radisson Rio de Janeiro Barra"}
                     price={407}
                 />
                 <Card 
                     image={Othon}
+                    place={"Rio de Janeiro - Brasil"}
                     title={"Radisson Rio de Janeiro Barra"}
                     price={407}
                 />
                 <Card 
                     image={Sheraton}
+                    place={"Rio de Janeiro - Brasil"}
                     title={"Radisson Rio de Janeiro Barra"}
                     price={407}
                 />
                 <Card 
                     image={Windsor}
+                    place={"Rio de Janeiro - Brasil"}
                     title={"Radisson Rio de Janeiro Barra"}
                     price={407}
                 />

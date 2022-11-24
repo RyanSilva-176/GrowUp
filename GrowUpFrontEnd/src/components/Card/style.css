@@ -14,3 +14,18 @@
 .card:last-child {
     margin-right: 0;
 }
+
+.place-info, .price-info {
+    display: flex;
+}
+
+.place-info > i {
+    margin-right: 10px;
+}
+.stars i {
+    color: goldenrod;
+}
+
+.price-info > p {
+    margin-left: auto;
+}

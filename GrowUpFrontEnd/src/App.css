@@ -28,3 +28,9 @@ nav {
     background-color: #a41996;
     border: 1px solid #E921D6;
   }
+
+.information {
+  background-color: #F1F2F8;
+  padding: 40px;
+  /* display: flex; */
+}

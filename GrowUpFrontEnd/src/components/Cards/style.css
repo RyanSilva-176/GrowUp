@@ -37,8 +37,7 @@
 
 .cards {
     display: flex;
-    overflow: scroll hidden;
-    /* overflow-x: hidden; */
+    overflow: auto;
 }
 
 @media screen and (max-width: 1122px) {

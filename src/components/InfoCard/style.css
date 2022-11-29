@@ -1,0 +1,14 @@
+.info {
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+}
+
+.info > img {
+    max-height: 18rem;
+}
+
+.info > h3 {
+    color: blueviolet;
+}
